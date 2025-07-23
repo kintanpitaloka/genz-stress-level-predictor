@@ -1,2 +1,2 @@
-# genz_minds
-What the Data Say ABout Gen Z’s Stress Level
+# genz stress level
+What the Data Say About Gen Z’s Stress Level
