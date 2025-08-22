@@ -23,17 +23,14 @@ with st.form("user_input_form"):
     submitted = st.form_submit_button("Prediksi Sekarang 🚀")
 
 if submitted:
-    # Buat array input
     input_data = np.array([[screen_time, tiktok_time, sleep_duration]])
 
     # Prediksi
     prediction = model.predict(input_data)
     predicted_label = le.inverse_transform(prediction)[0]
 
-    # Tampilkan hasil
     st.success(f"Tingkat stres kamu diprediksi: **{predicted_label.upper()}** 😌")
 
-    # CTA atau tips
     if predicted_label.lower() == "high":
         st.warning("⚠️ Coba kurangi screen time, perbanyak tidur, dan jaga mood kamu ya.")
     elif predicted_label.lower() == "medium":
@@ -45,3 +42,4 @@ if submitted:
 # Footer
 st.markdown("---")
 st.markdown("Made with 💚 by Kinberry Studio")
+
