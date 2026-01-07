@@ -41,5 +41,6 @@ if submitted:
 
 # Footer
 st.markdown("---")
-st.markdown("Made with 💚 by Kinberry Studio")
+st.markdown("©2025 | All rights reserved")
+
 
